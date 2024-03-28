@@ -9,6 +9,7 @@ public class Arcsin {
 
     @SneakyThrows
     public double toPowerSeries(double x){
+
         if(!(Math.abs(x) < 1))
             return Double.NaN;
 
@@ -23,7 +24,8 @@ public class Arcsin {
         return result;
     }
 
-    private int factorial(int number){
+
+    public int factorial(int number){
         int result = 1;
         for(int i = number; i > 0; i--){
             result *= i;
